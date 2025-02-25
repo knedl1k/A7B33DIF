@@ -1,0 +1,18 @@
+\babel@toc {czech}{}\relax 
+~\hfill \textbf {Strana}\par 
+\contentsline {section}{\numberline {1}První týden}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Jaké jsou rozdíly mezi analýzou obrazu (počítačovým viděním) na jedné straně a počítačovou grafikou na druhé straně? Uveďte dva příklady, které rozdíly demonstrují.}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Druhý týden}{2}{section.2}%
+\contentsline {section}{\numberline {3}Třetí týden}{3}{section.3}%
+\contentsline {section}{\numberline {4}Čtvrtý týden}{4}{section.4}%
+\contentsline {section}{\numberline {5}Pátý týden}{5}{section.5}%
+\contentsline {section}{\numberline {6}Šestý týden}{6}{section.6}%
+\contentsline {section}{\numberline {7}Sedmý týden}{7}{section.7}%
+\contentsline {section}{\numberline {8}Osmý týden}{8}{section.8}%
+\contentsline {section}{\numberline {9}Devátý týden}{9}{section.9}%
+\contentsline {section}{\numberline {10}Desátý týden}{10}{section.10}%
+\contentsline {section}{\numberline {11}Jedenáctý týden}{11}{section.11}%
+\contentsline {section}{\numberline {12}Dvanáctý týden}{12}{section.12}%
+\contentsline {section}{\numberline {13}Třináctý týden}{13}{section.13}%
+\contentsline {section}{\numberline {14}Čtrnáctý týden}{14}{section.14}%
