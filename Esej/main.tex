@@ -1,16 +1,99 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt, a4paper]{article} % Nebo scrartcl pro více možností
+
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
 \usepackage[czech]{babel}
-\usepackage[margin=2.5cm]{geometry}
-\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry} % Větší okraje
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\usepackage[svgnames]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\usepackage{microtype}
+\usepackage[autostyle]{csquotes} % smart quote handling
+% \usepackage{ebgaramond}
+
+\definecolor{DarkGray}{gray}{0.3}
+\definecolor{LightGray}{gray}{0.8}
+
+\babelprovide[transforms = oneletter.nobreak]{czech} 
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{DarkGray}}
+  {\thesection}
+  {1em}
+  {}
+\titleformat{\subsection}
+  {\normalfont\large\itshape\color{DarkGray}}
+  {\thesubsection}
+  {1em}
+  {}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand*{\LettrineTextFont}{\normalfont}
+\setlength{\headheight}{14.5pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=DarkGray,
+    citecolor=DarkGray,
+    urlcolor=DarkGray
+}
+
+\title{%
+  Visuální babylón \\
+  \large aneb Masová konzumace fotografií}
+\author{Jakub Adamec}
+\date{květen 2025}
 
 \begin{document}
 
-    \begin{center}
-        \Huge \textbf{Fotografie} \\ 
-        \normalsize Esej, A7B33DIF \\
-        Jakub Adamec
-    \end{center}
+\makeatletter
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
 
+    {\Huge\bfseries \textcolor{DarkGray}{\@title} \par}
+    \vspace{0.5cm}
 
+    {\Large \@author \par}
+    \vspace{0.2cm}
+
+    {knedl$1$k@tuta.io \par}
+    \vspace{1.5cm}
+
+    {\large \@date \par}
+    \vfill
+
+    % \includegraphics[width=0.9\textwidth, height=0.4\textheight, keepaspectratio]{titulni_obrazek.jpg}
+
+    \vspace*{1cm}
+    {\large Zpracování digitální fotografie \\ Katedra kybernetiky \\ ČVUT FEL\par} % Informace o škole/katedře
+\end{titlepage}
+\makeatother
+
+\pagestyle{fancy}
+
+\section{Úvod}
+\lettrine[lines=3, findent=5pt, nindent=0pt]{V}{isuální} Babylón — tam, kde nás každé ráno vítá 
+armáda mžourajících čtverečků a blikajících obláčků, vtrhující do našich očí miliardy obrazů v čase tak rychlém, že by 
+se i Jára Cimrman nestačil divit. Dříve se fotografii přisuzovala jakási alchymie světla a stínu, anebo 
+hříšné čertoviny na fotopapíru; dnes však cvaknutí drobné šmouhy mění svět k nepoznání a stává se hlavním 
+lajtmotivem\footnote{z něm. Leitmotiv, \enquote{vodící motiv}} našeho společného života.
+
+Ta masivní konzumace obrázků nám na jedné straně otevírá brány svobodomyslné kreace — dává dorazit všem maličkým i 
+velkým umělcům, kteří by jinak zůstali schovaní za zdmi svých ateliérů. Na straně druhé ale v tom šíleném švihu narůstá 
+i rámus a chaos: pozornost se štěpí jak staré sklo na tisíce úlomků, emoce praskají jak cirkusová prskavka a každý 
+záblesk radosti či strachu tančí s námi jen chvilku, než ho přebije další roztodivná fotka z cizího města, kavárny či 
+neuspořádané snídaně na Instagramu.
+
+\section{}
 
 \end{document}
