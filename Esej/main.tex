@@ -1,24 +1,21 @@
-\documentclass[12pt]{article} % Nebo scrartcl pro více možností
+\documentclass[12pt]{article}
 
-\usepackage[T1]{fontenc}
-\usepackage{fontspec}
 \usepackage[czech]{babel}
-\usepackage{graphicx}
-\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry} % Větší okraje
-\usepackage{amsmath}
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
 \usepackage{hyperref}
-
 \usepackage[svgnames]{xcolor}
 \usepackage{fancyhdr}
 \usepackage{lettrine}
 \usepackage[final]{microtype}
-\usepackage[autostyle]{csquotes} % smart quote handling
-
+\usepackage[autostyle]{csquotes}
 \usepackage[natbib=true]{biblatex}
+\usepackage{url}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+
 \addbibresource{references.bib}
 
 \definecolor{DarkGray}{gray}{0.3}
-\definecolor{LightGray}{gray}{0.8}
 
 \babelprovide[transforms = oneletter.nobreak]{czech} 
 
@@ -74,109 +71,118 @@
     {\large\bfseries \textcolor{DarkGray}{\@date} \par}
     \vfill
 
-    % \includegraphics[width=0.9\textwidth, height=0.4\textheight, keepaspectratio]{titulni_obrazek.jpg}
-
     \vspace*{1cm}
-    {\large Zpracování digitální fotografie \\ Katedra kybernetiky \\ ČVUT FEL\par} % Informace o škole/katedře
+    {\large Zpracování digitální fotografie \\ Katedra kybernetiky \\ ČVUT FEL\par}
 \end{titlepage}
 \makeatother
 
 \pagestyle{fancy}
 
 \section{Úvod}
-\lettrine[lines=3, findent=5pt, nindent=0pt]{V}{isuální} Babylón — tam, kde nás každé ráno vítá 
-armáda mžourajících čtverečků a blikajících obláčků, vtrhující do našich očí miliardy obrazů. Dříve se fotografii 
+\lettrine[lines=3, findent=5pt, nindent=0pt]{V}{isuální} Babylón --- tam, kde nás každé ráno vítá 
+armáda mžourajících čtverečků a blikajících obláčků, které vtrhují do našich očí miliardy obrazů. Dříve se fotografii 
 přisuzovala jakási alchymie světla a stínu, anebo hříšné čertoviny na fotopapíru; dnes však cvaknutí drobné šmouhy mění 
 svět k nepoznání a stává se hlavním lajtmotivem\footnote{z něm. Leitmotiv, \enquote{vodící motiv}} našeho společného 
 života.
 
-Ta masivní konzumace obrázků nám na jedné straně otevírá brány svobodomyslné kreace — dává dorazit všem maličkým i 
+Masivní konzumace obrázků nám na jedné straně otevírá brány svobodomyslné kreace --- dává dorazit všem maličkým i 
 velkým umělcům, kteří by jinak zůstali schovaní za zdmi svých ateliérů. Na straně druhé ale v tom šíleném švihu narůstá 
 i rámus a chaos: pozornost se štěpí jak staré sklo na tisíce úlomků, emoce praskají jak cirkusová prskavka a každý 
 záblesk radosti či strachu tančí s námi jen chvilku, než ho přebije další roztodivná fotka z cizího města, kavárny či 
 neuspořádané snídaně na Instagramu.
 
-V tom všem jsme ale zapomínáme, nebo snad záměrně přehlížíme, že umění, a tedy i fotografie, slouží jako nástroj 
-propagace od nepaměti. Vývojem technologií a zdokonalováním jednotlivých procesů člověk pomalu neví, jestli to, co vidí, 
+V tom všem ale zapomínáme, nebo snad záměrně přehlížíme, že umění, a tedy i fotografie, slouží jako nástroj propagandy 
+od nepaměti. Vývojem technologií a zdokonalováním jednotlivých procesů člověk pomalu neví, jestli to, co vidí, 
 je svět, nebo jen nějaká cizí představa o něm.
 
 \section{Jak se stane, že nemůžeme věřit fotografii?} 
 \subsection{Kaskáda náhody a scenérie {náhodně} nastražená}
-Fotograf si vybírá místo, čas i náladu jako děda místo k rybaření. A pak říká: \enquote{Já jen cvaknul.} Jenže on ví, že 
-právě za úsvitu, kdy růžovo zabarvené mraky slibují ráj, vydá obraz, jež ti roztaje srdce.  
+Fotograf si hraje na náhodu, jako by hodil šipku se zavázanýma očima. \enquote{Já jen cvaknul,} hlásí, ale ví moc dobře, 
+že přivstát si k růžovému úsvitu je skoro jako objednat si lístek do ráje. Však ten pohled, kdy růžové mraky hladí 
+obzor, roztaje srdce i ledová socha.
 
-Například fotografie staré lavičky u kříže. Pozorovatel hned cítí tragédii, i když je to jen výletní místo na okraji 
-lesa. Když se k tomu přidá doprovodný text, v lidech může hned vyvolat emoce mířené špatným směrem.
+Vzpomínejme třeba na starou lavičku u kříže. Divák v tom snad cítí dávnou tragédii, nostalgii, dohru starého příběhu --- 
+a přitom to bývala jen zaprášená zastávka na lesní pěšině. Stačí pár slov v popisku a z prázdného místa děláš scénu se 
+srdceryvným dramatem.
 
 \subsection{Barvy jako politické heslo}
-Kdopak by nemiloval teplé slunce? Ale když máš rudou vlajku za zády, už to není romantika, ale revoluce. Nebo naopak: 
-matný modrý filtr a hned z armády uděláš tiché básníky klidu.  
-Vlajky nad rušným náměstím zabarvené na zlatohnědo a hned tušíš, že tu vzkvétá \enquote{tradiční rodina}, třebaže
-prodávají jen obnošené ponožky.
+Kdo by nemiloval teplé slunce? Ale když máš rudou vlajku za zády, už to není romantika, ale revoluce. Nebo naopak: 
+matný modrý filtr a hned z armády uděláš tiché básníky klidu. Když samotné barvy začnou mluvit, myšlenky se řadí do řady 
+podle vloženého scénáře, i kdyby ti prodávali obnošené ponožky.
 
 \subsection{Digitální divadlo s umělými herečkami}
-Program umí vykouzlit dav na ulici, kde nikdo nebyl, nebo přihodit tanky v parku, kde nikdo netankoval. A pak se ptáš: 
-\enquote{Kde to asi bylo?} A oni ti odpoví píp — \enquote{tady i tady}.  
-AI doplní v pozadí hořící město k fotce neškodného protestu a hned je z něj občanská válka, byť lidé jen pískají s 
-transparenty.
+Ulice plná davu, tanky mezi stromy, plameny kdesi za rohem --- a přitom nikde nic. Stačí špetka umu a prázdné parky 
+ožijí jako kulisy na jevišti lži. \enquote{Kde se to stalo?} ptáš se: \enquote{Tady i tady,} odpoví ti algoritmus s 
+nekonečnou fantazií.
 
-\section{Příklady propagandy}
+Program načaruje zbraně i barikády, a najednou se z nevinného protestu stane občanská válka v HD rozlišení. Všechny ty 
+příběhy vytvořené z jedniček a nul vypadají tak pravě, že zlákají i nejotrlejšího skeptika.
+
+\section{Kdo drží spoušť, drží pravdu}
 \subsection{Fotografie jako nástroj konstrukce národní identity}
 V době, kdy Spojené státy postrádaly tisíciletou historii evropských národů, svobodní Američané nelenili, vzali foťák a 
 vytvořili si vlastní. Carleton Watkins vylepil mamutí desky 
-Yosemit — skalní věže jako gotické katedrály, mlžný opar jak biblické vidění — a zařídil, že stát uctí divočinu tím, že 
-ji prohlásil posvátnou. Manifest Destiny? Spíš manifest fotografie. Jeho obrazy se ve 14žurnálech a poštovních 
+Yosemit --- skalní věže jako gotické katedrály, mlžný opar jak biblické vidění --- a zařídil, že stát uctí divočinu tím, 
+že ji prohlásil posvátnou. Manifest Destiny? Spíš manifest fotografie. Jeho obrazy se ve 14 žurnálech a poštovních 
 pohlednicích šířily dál než dopisy, a když je spatřili lidé v New Yorku či Paříži, uvěřili, že USA stojí na práhu 
-nového Edenu. Watkinsova fotoexpedice tak nadhodila otázku: co je skutečné — krajina, nebo to, jak ji zobrazíme?
+nového Edenu. Watkinsova fotoexpedice tak nadhodila otázku: co je skutečné --- krajina, nebo to, jak ji zobrazíme?
 
 Buffalo Bill Cody poslal do světa obrázky, kde kavalérie v modrém \enquote{civilizovala} rudé plameny indiánských vozů, 
-a všichni tloukli pěstmi pro smíření — přitom maskovali genocidu. Jeho plakát \enquote{Enemies in '76, Friends in '85} 
+a všichni tloukli pěstmi pro smíření --- přitom maskovali genocidu. Jeho plakát \enquote{Enemies in '76, Friends in '85}
 nebyl reklama, ale obrazová pohádka, která do Chicaga přetáhla dav větší než na průmyslové vynálezy. Cesty parníkem a 
-železnicí rozvezly tyto obrazy po Evropě, kde se Ameriku učili milovat — bez informací o skutečných cenách, které 
+železnicí rozvezly tyto obrazy po Evropě, kde se Ameriku učili milovat. Bez informací o skutečných cenách, které 
 domorodí obyvatelé zaplatili. Každý kontrast rudé a modré byl pečlivě komponován jako divadelní scéna, kde všichni herci 
-znali své role, jen divák ne.
+znali své role, jen divák ne \cite{buffalo}.
 
 \subsection{Sovětské čistky na filmovém pásu}
 Fotomontáž LeFu\footnote{\url{https://encyklopedie.soc.cas.cz/w/LeF}} začala jako avantgarda, skončila jako kyberspirála 
-zapomnění. Trockij zmizel z Leninovy strany, pak z fotky, až zbyl sólista před anonymním davem. V roce 1938 na tom 
-dělalo 54 retušérů na plný úvazek — to je vášeň pro čistotu dějin. Retušér dokázal zaměnit i architekturu budov v 
-pozadí, přidat orámování nebe, aby působilo monumentálně, či ubourat sochu, která se politicky nehodila. Historie se tak 
-psala na koleni s brkem Photoshopu 20. let.
+zapomnění. Trockij zmizel z Leninovy strany, pak z fotky, až zbyl sólista před anonymním davem \cite{trockij}. V roce 
+1938 na tom dělala síť retušérů na plný úvazek --- to je vášeň pro čistotu dějin. Retušér dokázal zaměnit i architekturu 
+budov v pozadí, přidat orámování nebe, aby působilo monumentálně, či ubourat sochu, která se politicky nehodila. 
+Historie se tak psala na koleni s brkem Photoshopu 20. let.\cite{retus}
 
-Chaldejův snímek vztyčení vlajky — bez hodinek, více dýmu, zřetelnější stíny — se stal kronikou stalinských priorit. 
-Každá retuš byla výpovědí víc než tisíc slov z úst oficiálního prohlášení. V historických učebnicích se tato fotografie 
-objevuje s poznámkou o \enquote{optimální kompozici}, jako by šlo o umělecký záměr, ne o politický kalkul. I dnes se 
-historici dohaduji, která verze je \enquote{pravější} — a tak se z politického triku stala studnice živé vědy.
+Chaldejův snímek vztyčení vlajky\cite{reichstag}, bez hodinek, více dýmu, zřetelnější stíny, se stal kronikou 
+stalinských priorit. Každá retuš byla výpovědí víc než tisíc slov z úst oficiálního prohlášení. V historických 
+učebnicích se tato fotografie objevuje s poznámkou o \enquote{optimální kompozici}, jako by šlo o umělecký záměr, ne o 
+politický kalkul. I dnes se historici dohaduji, která verze je \enquote{pravější}, a tak se z politického triku stala 
+studnice živé vědy.
 
 \subsection{Umělá realita}
 V éře chytrých mobilů se fotografická montáž stala hlavní zbraní. Pravice edituje kampaňové snímky kandidátů tak, 
 aby stáli před vlajkami a symboly, které rezonují s konzervativním publikem; levice zase sestavuje koláže protestů 
-a sociálních statistik, aby vypadalo, že masy burcují k revoluci. Každá vrstva montáže — od barevného filtru až po 
-skryté vodoznaky — přidává k obrazu ideologické váhy, a video-sestřih GIFů přetváří nevinnou fotografii v manifest.
+a sociálních statistik, aby vypadalo, že masy burcují k revoluci. Každá vrstva montáže, od barevného filtru až po 
+skryté vodoznaky, přidává k obrazu ideologické váhy, a video-sestřih GIFů přetváří nevinnou fotografii v manifest.
 
-Fotografie už neukazuje to, co bylo — ukazuje to, co by bylo, kdybychom chtěli věřit pohádce.
-A výsledek? I když fotografie může vypadat autentičtě, je napůl snem, napůl plánem politické rétoriky.
+Fotografie už neukazuje to, co bylo. Ukazuje to, co by bylo, kdybychom chtěli věřit pohádce.
+A výsledek? I když fotografie může vypadat nefalšovaně, je napůl snem, napůl plánem iluzionisty v pozadí.
 
 \section{Existuje obrana?}
-\lettrine[lines=3, findent=5pt, nindent=0pt]{V}{šichni} známe ten pocit: spatříme fotku, a hned věříme, že svět je takový, jak nám ho servírují. Ale než začneš mlčky 
-souhlasit, zeptej se: \enquote{Kdo za tím cvaknutím stojí? Co tím sleduje a proč to zveřejnil?} Je to ten pán s 
+Asi každému je povědomý ten pocit: spatřím fotku, a hned věřím, že svět je takový, jak mi ho servírují. Ale než začneme 
+mlčky souhlasit, ptejme se: \enquote{Kdo za tím cvaknutím stojí? Co tím sleduje a proč to zveřejnil?} Je to ten pán s 
 fotoaparátem, co si potřebuje přihřát polívčičku, nebo umělec s duší malíře, co chce ukázat pravdu? Nebo se jen baví 
 tím, jak nás obalamutit?
 
-Vizuální gramotnost není žádná čarodějnice, ale cvik jako v tělocvičně. Lidé by se měli naučit číst kompozici jako 
+Vizuální gramotnost není žádná čarodějnice, ale cvik jako v tělocvičně. Měli bychom se naučit číst kompozici jako 
 noviny: kde je světlo, kde stín a proč zrovna tady ta postava kouká jinam než ostatní.
 
 \section{Závěr}
-\lettrine[lines=3, findent=5pt, nindent=0pt]{N}{e} ve všem je propaganda, podsouvání cizího pohledu na svět. Ne každý má potřebu druhým říkat, co smějí a nesmějí. Ale
-zároveň bychom neměli sami podlehnout pohodlnosti a myslit si, že můžeme ignorovat všudypřítomné pokusy vlivných i 
-nevlivných o změnu, či snad jen pokoušení našeho pohledu na věc.
+\lettrine[lines=3, findent=5pt, nindent=0pt]{N}{e} ve všem je propaganda, podsouvání cizího pohledu na svět. Ne každý má 
+potřebu druhým říkat, co smějí a nesmějí. Ale zároveň bychom neměli sami podlehnout pohodlnosti a myslit si, že můžeme 
+ignorovat všudypřítomné pokusy vlivných i nevlivných o změnu, či snad jen pokoušení našeho pohledu na věc.
 
 Kritické myšlení není jen žonglování s filozofickými pojmy, ale také schopnost zahlédnout skryté klamy. Když fotka volá 
 po emocích, ptáš se: \enquote{Proč mi zvedá adrenalin nebo slzy? Co je v pozadí, čeho si nevšimnu?} A pak ještě: 
 \enquote{Jaké mám já předsudky, když na to celé nadhodím svůj názor?}
 
+\vspace{6em}
+
+\begin{center}
+    Fotografie je hezká věc, ale jakmile ji někdo podepíše, můžeme si být jistí, \\
+    že už neříká pravdu, ale svůj dobrý úmysl.
+\end{center}
+
 \newpage
-\section{Reference}
+\section{Podklady}
 \nocite{*}
 \printbibliography[heading=none,title={}]
 
