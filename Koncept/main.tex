@@ -1,29 +1,38 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt]{article}
+
 \usepackage[czech]{babel}
-\usepackage[margin=2.5cm]{geometry}
-\usepackage{csquotes}
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage{fancyhdr}
+\usepackage[final]{microtype}
+\usepackage[autostyle]{csquotes}
+
+\definecolor{DarkGray}{gray}{0.3}
 
 \begin{document}
+\begin{center}
+    \Huge\bfseries\color{DarkGray} {Město v zrcadle} \\
+    \Large \textbf{Kontrast umělého a živého} \\ 
+    \normalsize Koncept projektu, A7B33DIF \\
+    Jakub Adamec
+\end{center}
 
-    \begin{center}
-        \Huge \textbf{Svět v odrazech} \\ 
-        \normalsize Koncept projektu, A7B33DIF \\
-        Jakub Adamec
-    \end{center}
+V sérii fotografií se chci zaměřit na nečekané setkání dvou světů --- strohé, geometrické struktury městského prostředí 
+a organickou krásu přírody. Do každého záběru umísťuji malé zrcátko, které zrcadlí skutečný kus přírody (strom, listí) 
+tak, aby byl v kontrastu s betonovými stěnami, kovovými zábradlími, popelnicemi či městskými značkami. Zrcadla 
+reflektují věrnou (needitovanou) realitu, čímž vzniká paralelní \enquote{okno do světa}, který se jinak v obraze 
+neobjeví.
 
-    Rád bych projekt pojal jako prozkoumávání skrytých vrstev reality prostřednictvím ultrazvukových vln a 
-    jejich odrazu.
+\subsection*{Cíle projektu}
+\begin{itemize}
+    \item Kontrast dvou realit: vizuálně a konceptuálně propojit město (umělé, statické) s přírodou (živou, dynamickou).
+    \item Svět v odrazech: ukázat, jak lze malým zrcadlem změnit celkovou atmosféru a význam scény.
+    \item Autenticita záběrů: zrcadlené prvky jsou vždy čerpány z bezprostředního okolí a bez digitální manipulace.
+    \item Fúze umění a konceptu: nabídnout divákovi prostor k zamyšlení nad vztahem člověka k přírodě i nad tím, co vše 
+    nám město „kazí“ či skrývá.
+\end{itemize}
 
-    \subsection*{Cíle projektu}
-    \begin{itemize}
-        \item Odhalení skrytého světa: ukázka, jak \enquote{vlny vidí} svět.
-        \item Fúze technologie a umění: spojení technologie (ultrazvuk/sonar) s uměleckými ztvárněním a 
-        poskytnout tak nový pohled na svět prostřednictvím kreativní digitální manipulace.
-    \end{itemize}
-
-    Jako studentovi FEL ČVUT mi toto přijde jako pěkné skloubení techniky a jejího kreativního využití.
-    Prozatím ještě nemám vyřešenou technickou stránku. Nejspíše využiju nějaký sonarový modul napojený na STM32 desku. 
-    Kód a dokumentace budou veřejné, aby šlo metody jednoduše replikovat a rozšiřovat.
-
+Projekt nabízí pohled na to, jak malý fragment přírody může prorazit betonovou šedi a přimět nás znovu vnímat okolní 
+svět.
 
 \end{document}
