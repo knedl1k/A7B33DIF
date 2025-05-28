@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[czech]{babel}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{graphicx}
+
+\usepackage{cfg}
+
+\author{Jakub Adamec}
+
+\begin{document}
+\begin{center}
+    \Huge Jakub Adamec \\
+    \Large 12\_barvy, A7B33DIF \\ 
+\end{center}
+
+\section{Otázka 3} Jakou barvu (vyjádřete v CIE XYZ souřadnicích) reprezentuje hodnota RGB \enquote{100, 180, 70}
+vzhledem k prostoru Demo RGB, jehož primární barvy mají CIE XYZ souřadnice
+\begin{align}
+    D_r = \begin{bmatrix} 0.4124 \\ 0.2127 \\ 0.0193 \end{bmatrix}\text{, } \, 
+    D_g = \begin{bmatrix} 0.3576 \\ 0.7152 \\ 0.1192 \end{bmatrix}\text{, } \,
+    D_b = \begin{bmatrix} 0.1805 \\ 0.0722 \\ 0.9504 \end{bmatrix}\text{,}
+\end{align}
+a hodnota gamma je rovna jedné (jde o lineární prostor)?
+
+1. normalisujeme RGB hodnoty
+
+\begin{align}
+    R=100, G=180, B=70, \, \, \text{tedy } C = \begin{bmatrix}R \\ G \\ B \end{bmatrix}_{\text{norm}}
+    = \frac{1}{255}\begin{bmatrix}100 \\ 180 \\ 70 \end{bmatrix} = 
+    \begin{bmatrix} 0.3922 \\ 0.7059 \\ 0.2745\end{bmatrix}
+\end{align}
+
+2. výpočet vektoru CIE XYZ souřadnic barvy získané ve barevném prostoru Demo RGB
+\begin{align}
+    C_D = 0.3922 D_r + 0.7059 D_g + 0.2745 D_b = 
+    \begin{bmatrix}
+        0.4124 & 0.3576 & 0.1805 \\ 0.2127 & 0.7152 & 0.0722 \\ 0.0193 & 0.1192 & 0.9504
+    \end{bmatrix}
+    \begin{bmatrix} 0.3922 \\ 0.7059 \\ 0.2745 \end{bmatrix} = \begin{bmatrix} 0.4637 \\ 0.6081 \\ 0.3526 \end{bmatrix}
+\end{align}
+
+\section{Otázka 4} Jaké RGB hodnoty je třeba poslat do monitoru Supersvit a Ostrovid, aby zobrazily barvu, jejíž XYZ
+souřadnice jste vypočítali v odpovědi na otázku 3?
+\[
+    C_D = \begin{bmatrix} 0.4637 \\ 0.6081 \\ 0.3526 \end{bmatrix}
+\]
+Musíme vyřešit rovnici 
+\begin{align}
+    C_D = M \begin{bmatrix} R \\ G \\ B \end{bmatrix}\text{,}
+\end{align}
+kde $M$ je matice primárních barev (pro Supersvit nebo Ostrovid).
+
+Matice primárních barev pro Supersvit:
+\[
+    M_S = 
+    \begin{bmatrix}
+        0.4065 & 0.3191 & 0.1684 \\ 0.2127 & 0.7152 & 0.0722 \\ 0.0063 & 0.0660 & 0.9625 \\
+    \end{bmatrix}
+\]
+Matice primárních barev pro Ostrovid:
+\[
+    M_O = 
+    \begin{bmatrix}
+        0.3815 & 0.3901 & 0.1714 \\ 0.2127 & 0.7152 & 0.0722 \\ 0.0313 & 0.1950 & 0.6587 \\
+    \end{bmatrix}
+\]
+\subsection{Supersvit}
+\begin{align}
+    A = \begin{bmatrix} R_S \\ G_S \\ B_S \end{bmatrix} = M_S^{-1} C_{D} = 
+    \begin{bmatrix} 0.4790 \\ 0.6758 \\ 0.3169 \end{bmatrix}
+\end{align}
+
+\subsection{Ostrovid}
+\begin{align}
+    B = \begin{bmatrix} R_O \\ G_O \\ B_O \end{bmatrix} = M_O^{-1} C_{D} = 
+    \begin{bmatrix} 0.3448 \\ 0.7167 \\ 0.3067 \end{bmatrix}
+\end{align}
+
+\vspace{4em}
+Všechny výpočty byly provedeny v jazyce 
+\raisebox{-0.2em}{\href{https://julialang.org}{\includegraphics[height=1em]{julia-logo.pdf}}}.
+
+\end{document}
